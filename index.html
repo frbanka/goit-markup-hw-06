@@ -18,13 +18,51 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="modal is-hidden" data-modal>
+    <div class="modal" data-modal>
       <div class="window">
-        <div>
-          <button class="button-close" data-modal-close>
-            <img src="./images/close.png" alt="close x" />
-          </button>
-        </div>
+        <button class="button-close" data-modal-close>
+          <img src="./images/close.png" alt="close x" />
+        </button>
+      </div>
+
+      <div class="modal-flex">
+        <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
+        <form>
+          <label class="label-flex">
+            Imię
+            <input class="modal-input" type="name" name="name" />
+          </label>
+          <label class="label-flex">
+            Telefon
+            <input
+              class="modal-input"
+              type="phone"
+              name="phone"
+              minlength="5"
+              maxlength="12"
+            />
+          </label>
+          <label class="label-flex">
+            Email
+            <input class="modal-input" type="email" name="email" />
+          </label>
+          <textarea
+            class="comment-area"
+            name="feedback"
+            rows="5"
+            placeholder="Wprowadź tekst"
+          ></textarea>
+          <label>
+            <div class="checkbox-modal">
+              <input
+                type="checkbox"
+                name="regcheck"
+                value="regcheck"
+                unchecked
+              />Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+            </div>
+          </label>
+        </form>
       </div>
     </div>
     <header class="header">
