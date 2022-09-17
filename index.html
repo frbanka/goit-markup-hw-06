@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="modal" data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="window">
         <button class="button-close" data-modal-close>
           <img src="./images/close.png" alt="close x" />
@@ -64,8 +64,13 @@
               name="regcheck"
               value="regcheck"
               unchecked
-            /><span class="checkmark"></span>Oświadczam iż akceptuję Regulamin i
-            Politykę Prywatności.
+              class="form-check"
+            /><span class="checkmark"></span>Oświadczam iż akceptuję
+            <a href="#" class="active-link">Regulamin</a>i<a
+              href="#"
+              class="active-link"
+              >Politykę Prywatności.</a
+            >
           </label>
           <div class="modal-button">
             <button type="submit" class="modal-send">Wyślij</button>

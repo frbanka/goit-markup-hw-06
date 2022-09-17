@@ -653,7 +653,7 @@ figure .fig > figcaption {
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
   opacity: 1;
-  visibility: visible;
+  visibility: 1;
   transition: opacity 300ms ease-in-out 0s;
 }
 
@@ -754,6 +754,14 @@ figure .fig > figcaption {
   color: #212121;
   margin: 0px 0px 12px 0px;
 }
+.form-check {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 .checkbox-modal {
   display: flex;
   flex-direction: row;
@@ -769,21 +777,22 @@ figure .fig > figcaption {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.checkbox-modal input:not(checked) {
-  opacity: 0;
-}
 .checkmark {
+  display: inline-block;
+  align-items: center;
   border: 2px solid #000000;
   border-radius: 2px;
   height: 15px;
   width: 16px;
   cursor: pointer;
 }
-.checkbox-modal input:checked ~ .checkmark {
-  background-image: url("/images/icons.svg#icon-check");
+.form-check:checked + .checkmark {
+  background-image: url("../images/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
   background-color: #2196f3;
+  border-color: transparent;
 }
-
 .modal-button {
   display: flex;
   align-items: center;
@@ -810,5 +819,10 @@ figure .fig > figcaption {
   fill: #212121;
   top: 50%;
   left: 15px;
+}
+.active-link {
+  margin: 0;
+  padding: 0;
+  color: #2196f3;
 }
 /* modal window */
