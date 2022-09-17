@@ -715,13 +715,19 @@ figure .fig > figcaption {
   border-radius: 4px;
   padding: 0px 0px 0px 42px;
   outline: none;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-label:focus-within svg {
   fill: #2196f3;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-area {
   padding: 12px 16px;
@@ -738,10 +744,14 @@ figure .fig > figcaption {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   outline: none;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-area:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   font-family: "Roboto";
@@ -785,6 +795,8 @@ figure .fig > figcaption {
   height: 15px;
   width: 16px;
   cursor: pointer;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-check:checked + .checkmark {
   background-image: url("../images/icon-check.svg");
@@ -792,6 +804,8 @@ figure .fig > figcaption {
   background-origin: border-box;
   background-color: #2196f3;
   border-color: transparent;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button {
   display: flex;
@@ -858,6 +872,15 @@ figure .fig > figcaption {
   border-radius: 4px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
+  outline: 0;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-post:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .submit-svg {
   display: flex;
